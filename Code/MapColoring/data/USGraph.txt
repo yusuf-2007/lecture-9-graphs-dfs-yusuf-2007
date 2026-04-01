@@ -1,0 +1,49 @@
+Maryland,Delaware,District of Columbia,Pennsylvania,Virginia,West Virginia
+Tennessee,Alabama,Arkansas,Georgia,Kentucky,Missouri,Mississippi,North Carolina,Virginia
+Virginia,District of Columbia,Kentucky,Maryland,North Carolina,Tennessee,West Virginia
+Missouri,Arkansas,Illinois,Iowa,Kansas,Kentucky,Nebraska,Oklahoma,Tennessee
+Kentucky,Illinois,Indiana,Missouri,Ohio,Tennessee,Virginia,West Virginia
+Massachusetts,Connecticut,Rhode Island,New Hampshire,New York,Vermont
+Pennsylvania,Delaware,Maryland,New Jersey,New York,Ohio,West Virginia
+New York,Connecticut,Massachusetts,New Jersey,Pennsylvania,Vermont
+Colorado,Arizona,Kansas,Nebraska,Oklahoma,New Mexico,Utah,Wyoming
+South Dakota,Iowa,Minnesota,Montana,Nebraska,North Dakota,Wyoming
+Arkansas,Louisiana,Oklahoma,Mississippi,Missouri,Tennessee,Texas
+Iowa,Illinois,Minnesota,Missouri,Nebraska,South Dakota,Wisconsin
+Georgia,Alabama,Florida,North Carolina,South Carolina,Tennessee
+Nebraska,Colorado,Iowa,Kansas,Missouri,South Dakota,Wyoming
+Oklahoma,Arkansas,Colorado,Kansas,Missouri,New Mexico,Texas
+West Virginia,Kentucky,Ohio,Maryland,Pennsylvania,Virginia
+Ohio,Indiana,Kentucky,Michigan,Pennsylvania,West Virginia
+Wyoming,Colorado,Idaho,Montana,Nebraska,South Dakota,Utah
+North Carolina,Georgia,South Carolina,Tennessee,Virginia
+Utah,Arizona,Colorado,Idaho,Nevada,New Mexico,Wyoming
+Idaho,Montana,Nevada,Oregon,Utah,Washington,Wyoming
+Arizona,California,Colorado,Nevada,New Mexico,Utah
+Minnesota,Iowa,North Dakota,South Dakota,Wisconsin
+Illinois,Indiana,Iowa,Kentucky,Missouri,Wisconsin
+Mississippi,Alabama,Arkansas,Louisiana,Tennessee
+Connecticut,Massachusetts,New York,Rhode Island
+Montana,Idaho,North Dakota,South Dakota,Wyoming
+New Mexico,Arizona,Colorado,Oklahoma,Utah,Texas
+Alabama,Florida,Georgia,Mississippi,Tennessee
+Vermont,Massachusetts,New Hampshire,New York
+Texas,Arkansas,New Mexico,Louisiana,Oklahoma
+North Dakota,Minnesota,Montana,South Dakota
+Nevada,Arizona,California,Idaho,Oregon,Utah
+Kansas,Colorado,Missouri,Nebraska,Oklahoma
+Wisconsin,Illinois,Iowa,Michigan,Minnesota
+Delaware,Maryland,New Jersey,Pennsylvania
+New Hampshire,Maine,Massachusetts,Vermont
+New Jersey,Delaware,New York,Pennsylvania
+Oregon,California,Idaho,Nevada,Washington
+Indiana,Illinois,Kentucky,Michigan,Ohio
+District of Columbia,Maryland,Virginia
+Rhode Island,Connecticut,Massachusetts
+South Carolina,Georgia,North Carolina
+Louisiana,Arkansas,Mississippi,Texas
+Maine,New Hampshire,Massachusetts
+California,Arizona,Nevada,Oregon
+Michigan,Indiana,Ohio,Wisconsin
+Florida,Alabama,Georgia
+Washington,Idaho,Oregon

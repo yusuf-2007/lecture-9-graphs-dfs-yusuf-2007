@@ -1,0 +1,18 @@
+Connecticut,Massachusetts,New York,Rhode Island
+Delaware,Maryland,New Jersey,Pennsylvania
+Illinois,Indiana,Kentucky
+Indiana,Illinois,Kentucky,Michigan,Ohio
+Kentucky,Illinois,Indiana,Ohio,Virginia,West Virginia
+Maine,New Hampshire,Massachusetts
+Maryland,Delaware,Pennsylvania,Virginia,West Virginia
+Massachusetts,Connecticut,Rhode Island,New Hampshire,New York,Vermont
+Michigan,Indiana,Ohio
+New Hampshire,Maine,Massachusetts,Vermont
+New Jersey,Delaware,New York,Pennsylvania
+New York,Connecticut,Massachusetts,New Jersey,Pennsylvania,Vermont
+Ohio,Indiana,Kentucky,Michigan,Pennsylvania,West Virginia
+Pennsylvania,Delaware,Maryland,New Jersey,New York,Ohio,West Virginia
+Rhode Island,Connecticut,Massachusetts
+Vermont,Massachusetts,New Hampshire,New York
+Virginia,Kentucky,Maryland,West Virginia
+West Virginia,Kentucky,Ohio,Maryland,Pennsylvania,Virginia

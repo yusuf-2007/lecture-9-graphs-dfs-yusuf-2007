@@ -1,0 +1,6 @@
+Connecticut,Massachusetts,Rhode Island
+Maine,New Hampshire,Massachusetts
+Massachusetts,Connecticut,Rhode Island,New Hampshire,Vermont
+New Hampshire,Maine,Massachusetts,Vermont
+Rhode Island,Connecticut,Massachusetts
+Vermont,Massachusetts,New Hampshire

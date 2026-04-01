@@ -1,0 +1,5 @@
+Idaho,Nevada,Oregon,Washington
+Nevada,California,Idaho,Oregon
+Oregon,California,Idaho,Nevada,Washington
+California,Nevada,Oregon
+Washington,Idaho,Oregon

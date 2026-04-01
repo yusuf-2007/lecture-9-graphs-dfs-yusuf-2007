@@ -1,0 +1,10 @@
+Superior Huron
+Michigan Huron
+Huron    StClair
+StClair  Erie
+Erie     Ontario
+Huron   Superior
+Huron   Michigan 
+StClair Huron 
+Erie    StClair
+Ontario Erie     
