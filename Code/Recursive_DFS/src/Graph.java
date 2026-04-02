@@ -48,40 +48,72 @@ public class Graph {
          * @throws FileNotFoundException if file not found
 	 */
 	public Graph(String filename) throws FileNotFoundException { 
+//
+//		// open the file for scanning
+//		File file = new File(filename);
+//		Scanner in = new Scanner(file);
+//
+//		// create the graph
+//		graph = new HashMap<String, Node>();
+//
+//		// loop over and parse each line in the input file
+//		while (in.hasNextLine()) {
+//			// read and split the line into an array of strings
+//			// where each string is separated by a space.
+//			Node n1, n2;
+//			String line = in.nextLine();
+//			String[] fields = line.split("( )+"); // 1 or more ' '
+//
+//			// creates new nodes as necessary
+//			if (graph.containsKey(fields[0])) {
+//				n1 = graph.get(fields[0]);
+//			}
+//			else {
+//				n1 = new Node(fields[0]);
+//				graph.put(fields[0],  n1);
+//			}
+//			if (graph.containsKey(fields[1])) {
+//				n2 = graph.get(fields[1]);
+//			}
+//			else {
+//				n2 = new Node(fields[1]);
+//				graph.put(fields[1],  n2);
+//			}
+//
+//			n1.addNeighbor(n2);
+//			n2.addNeighbor(n1);
+//		}
+//		in.close();
 
-		// open the file for scanning
-		File file = new File(filename);
-		Scanner in = new Scanner(file);
-
-		// create the graph
+		// MY OWN VERSION
 		graph = new HashMap<String, Node>();
 
-		// loop over and parse each line in the input file
+		Scanner in = new Scanner(new File(filename));
+
 		while (in.hasNextLine()) {
-			// read and split the line into an array of strings
-			// where each string is separated by a space.
-			Node n1, n2;
 			String line = in.nextLine();
-			String[] fields = line.split("( )+"); // 1 or more ' '
+			String[] parts = line.split("\\s+");
 
-			// creates new nodes as necessary
-			if (graph.containsKey(fields[0])) { 
-				n1 = graph.get(fields[0]);
-			}
-			else { 
-				n1 = new Node(fields[0]);
-				graph.put(fields[0],  n1);
-			}
-			if (graph.containsKey(fields[1])) { 
-				n2 = graph.get(fields[1]);
-			}
-			else { 
-				n2 = new Node(fields[1]);
-				graph.put(fields[1],  n2);
+			// first word is the node itself
+			Node n;
+			if (graph.containsKey(parts[0])) {
+				n = graph.get(parts[0]);
+			} else {
+				n = new Node(parts[0]);
+				graph.put(parts[0], n);
 			}
 
-			n1.addNeighbor(n2);
-			n2.addNeighbor(n1);
+			// Everything after index 0 is a neighbor
+			for (int i = 1; i < parts.length; i++) {
+				Node nbr;
+				if (graph.containsKey(parts[i])) {
+					nbr = graph.get(parts[i]);
+				} else {
+					nbr = new Node(parts[i]);
+					graph.put(parts[i], nbr);
+				}
+				n.addNeighbor(nbr);
+			}
 		}
 		in.close();
 	}
@@ -205,5 +237,46 @@ public class Graph {
         
         List<Node> path = buildPathRecursiveDFS(startNode, finishNode, visited);
         return path;
+	}
+
+	// Returns true or false based if there exists a path between two nodes.
+	public boolean dfs(Node current, Node finish, HashSet<Node> visitedNodes) {
+		if (current.equals(finish)) {
+			return true;
+		}
+		for (Node nbr : current.getNeighbors()) {
+			if (!visitedNodes.contains(nbr)) {
+				visitedNodes.add(nbr);
+				if (dfs(nbr, finish, visitedNodes)) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
+	public List<Node> dfsPath(Node current, Node finish, HashSet<Node> visitedNodes) {
+		// Create empty list to build the path
+		List<Node> path = new LinkedList<>();
+
+		// base case: check if the current node == finish node
+		if (current.equals(finish)) {
+			// Add the current node, since the current node == finish node, so we add to finish the path
+			path.add(current);
+			return path;
+		}
+
+		// Logic for recursive DFS method to build the path
+		for (Node nbr : current.getNeighbors()) {
+			if (!visitedNodes.contains(nbr)) {
+				visitedNodes.add(nbr);
+				path = dfsPath(nbr, finish, visitedNodes);
+				if (path.size() > 0) {
+					path.add(0, current);
+					return path;
+				}
+			}
+		}
+		return path;
 	}
 }

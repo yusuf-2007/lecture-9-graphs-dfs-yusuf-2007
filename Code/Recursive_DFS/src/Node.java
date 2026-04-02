@@ -98,21 +98,21 @@ public class Node {
 	 *  @return true if equal; false otherwise
 	 */
 	@Override
-		public boolean equals(Object other) {
-			boolean result = false;
-			if (other instanceof Node) {
-				Node n = (Node) other;
-				result = this.name.equals(n.name);
-			}
-			return result;
+	public boolean equals(Object other) {
+		boolean result = false;
+		if (other instanceof Node) {
+			Node n = (Node) other;
+			result = this.name.equals(n.name);
 		}
+		return result;
+	}
 
 	/**
 	 * The hash code of a Node is just the hash code of the name,
 	 * since no two node's can have the same name.
 	 */
 	@Override
-		public int hashCode() {
-			return this.name.hashCode();
-		}
+	public int hashCode() {
+		return this.name.hashCode();
+	}
 }
