@@ -279,4 +279,35 @@ public class Graph {
 		}
 		return path;
 	}
+
+
+	public boolean canReachStackDFS(String start, String finish) {
+		Node startNode = graph.get(start);
+		Node finishNode = graph.get(finish);
+
+		Stack<Node> stack = new Stack<>();
+		Set<Node> visited = new HashSet<>();
+
+		stack.push(startNode);
+		visited.add(startNode);
+
+		while (!stack.isEmpty()) {
+			Node current = stack.pop();
+
+			if (current.equals(finishNode)) {
+				return true;
+			}
+
+			for (Node neighbor : current.getNeighbors()) {
+				if (!visited.contains(neighbor)) {
+					visited.add(neighbor);
+					stack.push(neighbor);
+				}
+			}
+		}
+
+		return false;
+	}
+
+	public boolean dfsStack(String start, String finish)
 }
